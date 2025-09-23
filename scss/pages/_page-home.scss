@@ -1,0 +1,13 @@
+#pg-home {
+  .section-intro {
+    background-image: url(./img/home-intro.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

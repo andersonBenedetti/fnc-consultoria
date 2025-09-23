@@ -1,0 +1,25 @@
+$font-primary: "Albert Sans", sans-serif;
+
+@mixin text {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@mixin link-menu {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1;
+}
+
+@mixin text-btn {
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1;
+}
+
+@mixin text-small {
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 24px;
+}

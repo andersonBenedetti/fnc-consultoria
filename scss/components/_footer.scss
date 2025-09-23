@@ -1,0 +1,113 @@
+#footer {
+  background-color: $secondary_color;
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    padding: 100px 0;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+      padding: 50px 0;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-column {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      h3 {
+        @include text-btn;
+        color: $white_color;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        &.footer-social {
+          flex-direction: row;
+          gap: 10px;
+
+          li a {
+            background-color: $tertiary_color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 5px;
+          }
+        }
+
+        .footer-link {
+          @include text;
+          color: $white_color;
+          opacity: 0.6;
+          transition: opacity 0.3s ease;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      &:first-child {
+        ul {
+          gap: 20px;
+        }
+
+        a {
+          display: flex;
+          gap: 10px;
+          color: $white_color;
+          transition: opacity 0.3s ease;
+
+          &:hover {
+            opacity: 0.6;
+          }
+
+          img {
+            margin-top: -1px;
+          }
+
+          span {
+            @include text;
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+
+    p {
+      @include text-small;
+      color: $white_color;
+      opacity: 0.6;
+
+      a {
+        color: $white_color;
+        transition: text-decoration 0.3s ease;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
