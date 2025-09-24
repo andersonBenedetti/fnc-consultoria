@@ -1,0 +1,64 @@
+.section-about {
+  background-image: url(./img/home-intro.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+
+  @media (max-width: 1024px) {
+    padding: 50px 0;
+  }
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+
+    @media (max-width: 1024px) {
+      gap: 50px;
+    }
+
+    .about-infos {
+      max-width: 375px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      #about-title {
+        @include title-intro;
+        color: $white_color;
+
+        span {
+          font-weight: 800;
+        }
+      }
+
+      p {
+        color: $white_color;
+      }
+    }
+
+    .about-cards {
+      max-width: 540px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+
+      .about-card {
+        backdrop-filter: blur(19px);
+        background-color: $card_color;
+        border-radius: 10px;
+        padding: 30px 20px;
+
+        p {
+          @include text-card;
+          color: $white_color;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

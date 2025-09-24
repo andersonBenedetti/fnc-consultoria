@@ -23,3 +23,31 @@ $font-primary: "Albert Sans", sans-serif;
   font-size: 0.875em;
   line-height: 24px;
 }
+
+@mixin title-intro {
+  font-weight: 600;
+  font-size: 3.5em;
+  line-height: 1.2;
+
+  @media (max-width: 1024px) {
+    font-size: 2.5em;
+  }
+}
+
+@mixin title-section {
+  font-weight: 600;
+  font-size: 2.5em;
+  line-height: 1;
+}
+
+@mixin title-card {
+  font-weight: 600;
+  font-size: 1.313em;
+  line-height: 1;
+}
+
+@mixin text-card {
+  font-weight: 600;
+  font-size: 1.125em;
+  line-height: 26px;
+}

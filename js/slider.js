@@ -12,15 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
       clickable: true,
     },
     autoplay: {
-      delay: 6000, 
-      disableOnInteraction: false, 
+      delay: 6000,
+      disableOnInteraction: false,
     },
-	speed: 1000,
+    speed: 1000,
   });
 
-  const catCarousel = new Swiper(".cat-carousel", {
+  const customersCarousel = new Swiper(".customers-carousel", {
     loop: true,
-    slidesPerView: 1,
+    slidesPerView: 2,
     spaceBetween: 0,
     autoplay: {
       delay: 6000,
@@ -30,71 +30,30 @@ document.addEventListener("DOMContentLoaded", function () {
       el: ".swiper-pagination",
       clickable: true,
     },
-	speed: 1000,
+    speed: 1000,
     breakpoints: {
-      1024: {
-        slidesPerView: 3,
-      },
-      2200: {
-        slidesPerView: 4,
+      768: {
+        slidesPerView: 5,
       },
     },
   });
 
-  const formatCarousel = new Swiper(".format-carousel", {
+  const solutionsCarousel = new Swiper(".solutions-carousel", {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 0,
-    pagination: {
-      el: "#pagination-format",
-      clickable: true,
+    spaceBetween: 20,
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
     },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    speed: 1000,
     breakpoints: {
       768: {
-        slidesPerView: 1.2,
-      },
-      1024: {
-        slidesPerView: 2.2,
-      },
-      1800: {
-        slidesPerView: 3.2,
-      },
-      2000: {
-        slidesPerView: 4.2,
-      },
-    },
-  });
-
-  const crossSellCarousel = new Swiper(".cross-sell-carousel", {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 0,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-    },
-  });
-
-  const upsellCarousel = new Swiper(".upsell-carousel", {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 0,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 3,
+        slidesPerView: 2.4,
       },
     },
   });
