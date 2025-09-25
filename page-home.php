@@ -111,6 +111,22 @@ $solutions = [
             </div>
         </div>
     </section>
+
+    <section class="section-results" aria-labelledby="results-title">
+        <div class="results-infos container">
+            <h2 id="results-title"><span>Conte conosco para crescer com eficiência fiscal e</span> potencializar
+                resultados</h2>
+
+            <div class="results-bottom">
+                <a class="btn" href="#">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/btn-whats.svg" alt="WhatsApp"
+                        width="18" height="18">
+                    Agende uma conversa
+                </a>
+                <p>e descubra as oportunidades para sua empresa</p>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

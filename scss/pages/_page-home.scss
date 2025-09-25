@@ -29,4 +29,49 @@
       color: $white_color;
     }
   }
+
+  .section-results {
+    max-width: 1275px;
+    margin: 50px auto;
+    padding: 200px 0;
+    background-image: url(./img/home-resultados.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+      padding: 50px 0;
+      border-radius: 0;
+    }
+
+    .results-infos {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      #results-title {
+        max-width: 800px;
+        @include title-section;
+        color: $white_color;
+
+        span {
+          font-weight: 400;
+        }
+      }
+
+      .results-bottom {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        p {
+          color: $white_color;
+        }
+      }
+    }
+  }
 }

@@ -882,5 +882,47 @@ ul {
   max-width: 475px;
   color: #ffffff;
 }
+#pg-home .section-results {
+  max-width: 1275px;
+  margin: 50px auto;
+  padding: 200px 0;
+  background-image: url(./img/home-resultados.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (max-width: 1024px) {
+  #pg-home .section-results {
+    flex-wrap: wrap;
+    padding: 50px 0;
+    border-radius: 0;
+  }
+}
+#pg-home .section-results .results-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#pg-home .section-results .results-infos #results-title {
+  max-width: 800px;
+  font-weight: 600;
+  font-size: 2.5em;
+  line-height: 1;
+  color: #ffffff;
+}
+#pg-home .section-results .results-infos #results-title span {
+  font-weight: 400;
+}
+#pg-home .section-results .results-infos .results-bottom {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+#pg-home .section-results .results-infos .results-bottom p {
+  color: #ffffff;
+}
 
 /*# sourceMappingURL=style.css.map */
