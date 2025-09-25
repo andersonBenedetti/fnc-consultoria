@@ -41,6 +41,7 @@ ul {
 
 .container {
   max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
 }
 @media (max-width: 1100px) {
@@ -846,6 +847,47 @@ ul {
   line-height: 26px;
   color: #ffffff;
   margin-top: 10px;
+}
+
+.section-hero {
+  background-image: url(./img/hero-sobre-nos.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.section-hero .hero-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #ffffff;
+}
+.section-hero .hero-infos .hero-subtitle {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.section-hero .hero-infos #hero-title {
+  max-width: 900px;
+  font-weight: 600;
+  font-size: 2.5em;
+  line-height: 1;
+}
+.section-hero .hero-infos p {
+  max-width: 500px;
+}
+.section-hero .hero-infos .btn-bottom svg {
+  transition: transform 0.3s ease;
+}
+.section-hero .hero-infos .btn-bottom svg path {
+  transition: fill 0.3s ease;
+}
+.section-hero .hero-infos .btn-bottom svg:hover {
+  transform: scale(1.1);
+}
+.section-hero .hero-infos .btn-bottom svg:hover path {
+  fill: #10648f;
 }
 
 #pg-home .section-intro {

@@ -1,5 +1,5 @@
 <?php
-// Template Name: Home
+// Template Name: Sobre nós
 ?>
 
 <?php
@@ -30,17 +30,41 @@ $about_cards = [
         'icon' => 'marketeq_tax.svg',
         'text' => 'Equipe formada por advogados e consultores tributários'
     ],
+    [
+        'icon' => 'tributaristas.svg',
+        'text' => 'Tributaristas como mola propulsora para impulsionar resultados e maximizar operações'
+    ],
+    [
+        'icon' => 'consultoria.svg',
+        'text' => 'Consultoria personalizada para atuar nos segmentos de forma global e individualizada'
+    ],
 ];
 ?>
 
 <?php get_header(); ?>
 
-<main id="pg-home" role="main">
-    <section class="section-intro" aria-labelledby="intro-title">
-        <h1 id="intro-title">Inteligência fiscal aplicada à <span>inovação</span></h1>
-        <p>Especialistas em Lei do Bem, Lei da Informática e programas de incentivo fiscal para empresas.</p>
-        <a class="btn" href="/contato" aria-label="Fale com um especialista da FNC Consultoria">Fale com um
-            especialista</a>
+<main id="pg-about" role="main">
+    <section class="section-hero" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero-infos">
+                <p class="hero-subtitle">Sobre nós</p>
+                <h1 id="hero-title">Somos a FNC Consultoria, referência em inteligência tributária para empresas em
+                    crescimento.</h1>
+                <p>Especialistas em transformar obrigações fiscais em oportunidades estratégicas para organizações que
+                    pensam no longo prazo.</p>
+                <a class="btn-bottom" href="#sobre-nos" aria-label="Seção Sobre nós">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.88 -0.000232697C4.864 -0.000232697 0 4.86377 0 10.8798C0 16.8958 4.864 21.7598 10.88 21.7598C16.896 21.7598 21.76 16.8958 21.76 10.8798C21.76 4.86377 16.896 -0.000232697 10.88 -0.000232697ZM10.88 20.4798C5.568 20.4798 1.28 16.1918 1.28 10.8798C1.28 5.56777 5.568 1.27977 10.88 1.27977C16.192 1.27977 20.48 5.56777 20.48 10.8798C20.48 16.1918 16.192 20.4798 10.88 20.4798Z"
+                            fill="white" />
+                        <path
+                            d="M16.192 9.79151L10.88 15.1035L5.568 9.79151L4.672 10.6875L10.88 16.8955L17.088 10.6875L16.192 9.79151Z"
+                            fill="white" />
+                        <path d="M10.24 16H11.52V5.12H10.24V16Z" fill="white" />
+                    </svg>
+                </a>
+            </div>
+        </div>
     </section>
 
     <section class="section-customers" aria-labelledby="customers-title">
@@ -61,7 +85,37 @@ $about_cards = [
         </div>
     </section>
 
-    <section class="section-solutions" aria-labelledby="solutions-title">
+    <section class="section-about" aria-labelledby="about-title">
+        <div class="container">
+            <div class="about-infos">
+                <h1 id="about-title">Sobre nós</h1>
+
+                <p>Somos uma consultoria tributária especializada em gerar economia fiscal com segurança jurídica,
+                    assegurando total compliance e conformidade com a legislação vigente.</p>
+
+                <p>Acreditamos que a inovação é o motor do desenvolvimento e, por isso, estamos ao lado das empresas que
+                    impulsionam o país, promovendo uma tributação justa, estratégica e legalmente embasada.</p>
+
+                <p>Atuamos na otimização de processos fiscais, maximização de créditos e resultados, além de oferecer
+                    soluções inovadoras que ampliam a eficiência financeira e a competitividade das companhias.</p>
+
+                <p>Trabalhamos de forma integrada na implementação de benefícios fiscais, incentivos à inovação e
+                    planejamento tributário, unindo conhecimento técnico especializado a resultados reais.</p>
+            </div>
+
+            <div class="about-cards">
+                <?php foreach ($about_cards as $card): ?>
+                    <div class="about-card">
+                        <img src="<?php echo esc_url($theme_uri . '/icons/' . $card['icon']); ?>"
+                            alt="Ícone <?php echo esc_attr($card['text']); ?>" loading="lazy" width="41" height="41">
+                        <p><?php echo esc_html($card['text']); ?></p>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-solutions" aria-labelledby="solutions-title" style="margin-top: 50px;">
         <div class="solutions-infos">
             <h2 id="solutions-title">Conheça nossas soluções</h2>
             <p>95% das empresas elegíveis ainda não aproveitam os incentivos fiscais disponíveis</p>
@@ -94,44 +148,6 @@ $about_cards = [
                         </span>
                     </a>
                 <?php endforeach; ?>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-about" aria-labelledby="about-title">
-        <div class="container">
-            <div class="about-infos">
-                <h1 id="about-title">Sobre nós</h1>
-                <p>Somos uma consultoria tributária especializada em gerar economia fiscal com segurança jurídica,
-                    assegurando total compliance e conformidade com a legislação vigente.</p>
-                <a class="btn" href="/contato" aria-label="Fale com um especialista da FNC Consultoria">Conheça a FNC
-                    Consultoria</a>
-            </div>
-
-            <div class="about-cards">
-                <?php foreach ($about_cards as $card): ?>
-                    <div class="about-card">
-                        <img src="<?php echo esc_url($theme_uri . '/icons/' . $card['icon']); ?>"
-                            alt="Ícone <?php echo esc_attr($card['text']); ?>" loading="lazy" width="41" height="41">
-                        <p><?php echo esc_html($card['text']); ?></p>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-results" aria-labelledby="results-title">
-        <div class="results-infos container">
-            <h2 id="results-title"><span>Conte conosco para crescer com eficiência fiscal e</span> potencializar
-                resultados</h2>
-
-            <div class="results-bottom">
-                <a class="btn" href="#">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/btn-whats.svg" alt="WhatsApp"
-                        width="18" height="18">
-                    Agende uma conversa
-                </a>
-                <p>e descubra as oportunidades para sua empresa</p>
             </div>
         </div>
     </section>

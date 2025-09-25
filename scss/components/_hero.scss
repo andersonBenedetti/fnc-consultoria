@@ -1,0 +1,46 @@
+.section-hero {
+  background-image: url(./img/hero-sobre-nos.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .hero-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: $white_color;
+
+    .hero-subtitle {
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    #hero-title {
+      max-width: 900px;
+      @include title-section;
+    }
+
+    p {
+      max-width: 500px;
+    }
+
+    .btn-bottom svg {
+      transition: transform 0.3s ease;
+
+      path {
+        transition: fill 0.3s ease;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+
+        path {
+          fill: $tertiary_color;
+        }
+      }
+    }
+  }
+}
