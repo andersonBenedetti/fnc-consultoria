@@ -134,11 +134,6 @@ $footer_menu_institucional = [
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/success-form.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/reset-filters-back.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/summary-toggle.js"></script>
-<script type="text/javascript"
-    src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
-<script type="text/javascript">
-    new RDStationForms('site-08-2025-faad81bf493f4bd2d703').createForm();
-</script>
 <?php wp_footer(); ?>
 </body>
 

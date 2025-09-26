@@ -88,7 +88,7 @@ $about_cards = [
     <section class="section-about" aria-labelledby="about-title">
         <div class="container">
             <div class="about-infos">
-                <h1 id="about-title">Sobre nós</h1>
+                <h2 id="about-title">Sobre nós</h2>
 
                 <p>Somos uma consultoria tributária especializada em gerar economia fiscal com segurança jurídica,
                     assegurando total compliance e conformidade com a legislação vigente.</p>
