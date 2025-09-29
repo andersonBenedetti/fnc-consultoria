@@ -38,6 +38,10 @@ $font-primary: "Albert Sans", sans-serif;
   font-weight: 600;
   font-size: 2.5em;
   line-height: 1;
+
+  @media (max-width: 1024px) {
+    font-size: 2em;
+  }
 }
 
 @mixin title-card {
@@ -56,4 +60,10 @@ $font-primary: "Albert Sans", sans-serif;
   font-weight: 500;
   font-size: 0.875em;
   line-height: 20px;
+}
+
+@mixin title-number {
+  font-weight: 300;
+  font-size: 1.313em;
+  line-height: 1;
 }

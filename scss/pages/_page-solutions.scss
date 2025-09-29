@@ -47,6 +47,18 @@
     border-radius: 10px;
     padding: 100px 0 50px 0;
 
+    &.secondary {
+      background-color: $secondary_color;
+
+      .infos-cards .infos-card {
+        background-color: $tertiary_color;
+      }
+    }
+
+    &.tertiary {
+      background-color: $tertiary_infos_color;
+    }
+
     @media (max-width: 768px) {
       border-radius: 0;
       padding: 50px 0;
@@ -74,6 +86,7 @@
 
       @media (max-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
       }
 
       .infos-card {
@@ -146,6 +159,153 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .section-items {
+    max-width: 1275px;
+    margin: 0 auto 50px auto;
+    padding: 100px 0;
+    background-image: url(./img/solucoes-fundo.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+
+    &.secondary {
+      background-image: none;
+      background-color: $secondary_color;
+    }
+
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+      padding: 40px 0;
+      border-radius: 0;
+    }
+
+    .items-infos {
+      max-width: 580px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      #items-title {
+        @include title-section;
+        color: $white_color;
+      }
+
+      p {
+        color: $white_color;
+      }
+    }
+
+    .items-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin: 50px auto;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      .item-card {
+        backdrop-filter: blur(19px);
+        background-color: $card_color;
+        border-radius: 10px;
+        padding: 20px;
+        min-height: 192px;
+        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+
+        @media (max-width: 1024px) {
+          justify-content: start;
+        }
+
+        h3 {
+          @include title-number;
+          color: $white_color;
+
+          @media (max-width: 1024px) {
+            font-size: 0.875em;
+          }
+        }
+
+        p {
+          @include text-card;
+          color: $white_color;
+
+          @media (max-width: 1024px) {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+
+    .btn {
+      margin: 0 auto;
+    }
+  }
+
+  .section-contact {
+    padding: 100px 20px;
+    background-color: $tertiary_color;
+    background-image: url(./img/fundo-contato.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    &.secondary {
+      background-position: center;
+      background-size: cover;
+    }
+
+    @media (max-width: 1024px) {
+      padding: 50px 20px;
+      background-size: cover;
+    }
+
+    #contact-title {
+      max-width: 800px;
+      @include title-section;
+      color: $white_color;
+      text-align: center;
+
+      span {
+        font-weight: 400;
+      }
+    }
+
+    .contact-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      p {
+        color: $white_color;
       }
     }
   }

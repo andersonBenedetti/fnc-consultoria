@@ -1,20 +1,20 @@
 <?php
-// Template Name: Lei do bem
+// Template Name: Mover
 ?>
 
 <?php
 $infos_cards = [
     [
-        'text' => 'Retorno de 20 a 27% dos valores investidos em P&DI como dedução para IRPJ'
+        'text' => 'Isenção ou redução do Imposto de Importação'
     ],
     [
-        'text' => 'Redução de 50% do IPI'
+        'text' => 'Alíquotas diferenciadas de IPI'
     ],
     [
-        'text' => 'Depreciação integral de maquinários e aparelhos'
+        'text' => 'Créditos financeiros entre R$ 0,50 a R$ 3,20 para cada R$ 1,00 investido'
     ],
     [
-        'text' => 'Alíquota zero de IRRF para marcas e patentes no exterior'
+        'text' => 'Adoção de tecnologia limpa e materiais recicláveis'
     ],
 ];
 
@@ -26,10 +26,10 @@ $benefits_list = [
         'text' => 'Tenham regularidade fiscal (CND ou CPEN);'
     ],
     [
-        'text' => 'Tenham auferido lucro no período referente aos dispêndios;'
+        'text' => 'Investimento mínimo em P&DI;'
     ],
     [
-        'text' => 'Invistam em pesquisa e desenvolvimento (P&DI).'
+        'text' => 'Centro de custo específico de P&DI.'
     ],
 ];
 
@@ -45,19 +45,20 @@ $items = [
 
 <main id="pg-solutions" role="main">
     <section class="section-hero" aria-labelledby="hero-title"
-        style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/hero-lei-do-bem.webp');">
+        style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/hero-mover.webp');">
         <div class="container">
             <div class="hero-infos">
-                <p class="hero-subtitle">soluções > Lei do bem</p>
-                <h1 id="hero-title">Transforme investimento em inovação em economia fiscal.</h1>
-                <p>A FNC te ajuda a aplicar corretamente a Lei do Bem e aproveitar todos os benefícios tributários que
-                    sua empresa tem direito.</p>
+                <p class="hero-subtitle">soluções > MOVER</p>
+                <h1 id="hero-title">Incentivo MOVER: benefícios para empresas que inovam na mobilidade.</h1>
+                <p>Nossa consultoria oferece suporte completo na habilitação, gestão e prestação de contas do benefício
+                    junto aos órgãos competentes, assegurando conformidade legal e o aproveitamento máximo dos
+                    incentivos disponíveis.</p>
             </div>
 
             <div class="container-form">
                 <div class="form-intro">
-                    <h3>Descubra se você se enquadra na Lei do Bem e veja quanto pode economizar com o apoio da nossa
-                        Consultoria.</h3>
+                    <h3>Descubra se sua empresa pode se beneficiar do programa MOVER com o apoio da nossa consultoria.
+                    </h3>
 
                     <p>Preencha o formulário e receba mais informações.</p>
                 </div>
@@ -69,18 +70,19 @@ $items = [
 
     <section class="section-block" aria-labelledby="section-title">
         <div class="container">
-            <h2 id="section-title">O que é a Lei do Bem?</h2>
-            <p>A Lei do Bem (Lei nº 11.196/2005) é um importante incentivo fiscal destinado às empresas que realizam
-                investimentos em pesquisa, desenvolvimento e inovação. Ao aderir ao benefício, é possível deduzir uma
-                parcela significativa desses investimentos diretamente do Imposto de Renda (IRPJ) e da Contribuição
-                Social
-                sobre o Lucro Líquido (CSLL), gerando economia tributária com segurança jurídica.</p>
+            <h2 id="section-title">O que é o MOVER?</h2>
+            <p>O Programa MOVER é um incentivo fiscal do Governo Federal que substitui o Rota 2030, voltado para a
+                indústria automotiva. Ele estimula a inovação, a descarbonização e a eficiência energética por meio de
+                benefícios como créditos financeiros sobre investimentos em P&DI, redução do IPI (IPI Verde) e isenção
+                do Imposto de Importação para autopeças sem similar nacional.</p>
+            <p>Além de gerar economia tributária, o programa fortalece a competitividade e promove práticas sustentáveis
+                no setor automotivo.</p>
     </section>
 
-    <section class="section-infos" aria-labelledby="infos-title">
+    <section class="section-infos tertiary" aria-labelledby="infos-title">
         <div class="container">
             <div class="infos-intro">
-                <h2 id="infos-title">Como a Lei do Bem pode ajudar sua empresa?</h2>
+                <h2 id="infos-title">Como o MOVER pode ajudar sua empresa?</h2>
 
                 <a class="btn" href="#">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/btn-whats.svg" alt="WhatsApp"
@@ -114,7 +116,7 @@ $items = [
             </div>
 
             <div class="list-container">
-                <p>Empresas de qualquer setor que:</p>
+                <p>Empresas do setor automotivo que:</p>
                 <div class="benefits-list">
                     <?php foreach ($benefits_list as $list): ?>
                         <div class="benefits-item">
@@ -128,7 +130,7 @@ $items = [
         </div>
     </section>
 
-    <section class="section-items" aria-labelledby="items-title">
+    <section class="section-items secondary" aria-labelledby="items-title">
         <div class="container">
             <div class="items-infos">
                 <h2 id="items-title">Nós atuamos do diagnóstico à formalização do pleito</h2>
@@ -150,7 +152,8 @@ $items = [
         </div>
     </section>
 
-    <section class="section-contact" aria-labelledby="contact-title">
+    <section class="section-contact secondary" aria-labelledby="contact-title"
+        style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/compilance-contato.webp');">
         <h2 id="contact-title"><span>Conte conosco para crescer com eficiência fiscal e</span> potencializar
             resultados</h2>
 

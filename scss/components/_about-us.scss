@@ -47,6 +47,10 @@
       grid-template-columns: 1fr 1fr;
       gap: 20px;
 
+      @media (max-width: 1024px) {
+        gap: 10px;
+      }
+
       .about-card {
         backdrop-filter: blur(19px);
         background-color: $card_color;

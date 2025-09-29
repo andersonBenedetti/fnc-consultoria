@@ -1,35 +1,32 @@
 <?php
-// Template Name: Lei do bem
+// Template Name: FINEP
 ?>
 
 <?php
 $infos_cards = [
     [
-        'text' => 'Retorno de 20 a 27% dos valores investidos em P&DI como dedução para IRPJ'
+        'text' => 'Financiamento com condições facilitadas e carência estendida'
     ],
     [
-        'text' => 'Redução de 50% do IPI'
+        'text' => 'Acesso a programas e editais temáticos'
     ],
     [
-        'text' => 'Depreciação integral de maquinários e aparelhos'
+        'text' => 'Apoio à modernização industrial'
     ],
     [
-        'text' => 'Alíquota zero de IRRF para marcas e patentes no exterior'
+        'text' => 'Atuação complementar com lei do bem, lei da informática, MOVER e outros benefícios fiscais'
     ],
 ];
 
 $benefits_list = [
     [
-        'text' => 'Apurem IRPJ pelo lucro real;'
+        'text' => 'Apurem pelo lucro presumido ou real;'
     ],
     [
         'text' => 'Tenham regularidade fiscal (CND ou CPEN);'
     ],
     [
         'text' => 'Tenham auferido lucro no período referente aos dispêndios;'
-    ],
-    [
-        'text' => 'Invistam em pesquisa e desenvolvimento (P&DI).'
     ],
 ];
 
@@ -45,19 +42,18 @@ $items = [
 
 <main id="pg-solutions" role="main">
     <section class="section-hero" aria-labelledby="hero-title"
-        style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/hero-lei-do-bem.webp');">
+        style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/hero-finep.webp');">
         <div class="container">
             <div class="hero-infos">
-                <p class="hero-subtitle">soluções > Lei do bem</p>
-                <h1 id="hero-title">Transforme investimento em inovação em economia fiscal.</h1>
-                <p>A FNC te ajuda a aplicar corretamente a Lei do Bem e aproveitar todos os benefícios tributários que
-                    sua empresa tem direito.</p>
+                <p class="hero-subtitle">soluções > FINEP</p>
+                <h1 id="hero-title">FINEP: financiamento estratégico para empresas que investem em inovação.</h1>
+                <p>Suporte completo para que sua empresa acesse o financiamento ideal com segurança e assertividade.</p>
             </div>
 
             <div class="container-form">
                 <div class="form-intro">
-                    <h3>Descubra se você se enquadra na Lei do Bem e veja quanto pode economizar com o apoio da nossa
-                        Consultoria.</h3>
+                    <h3>Descubra se seu projeto se enquadra nos critérios da FINEP e como captar recursos com segurança.
+                    </h3>
 
                     <p>Preencha o formulário e receba mais informações.</p>
                 </div>
@@ -69,18 +65,19 @@ $items = [
 
     <section class="section-block" aria-labelledby="section-title">
         <div class="container">
-            <h2 id="section-title">O que é a Lei do Bem?</h2>
-            <p>A Lei do Bem (Lei nº 11.196/2005) é um importante incentivo fiscal destinado às empresas que realizam
-                investimentos em pesquisa, desenvolvimento e inovação. Ao aderir ao benefício, é possível deduzir uma
-                parcela significativa desses investimentos diretamente do Imposto de Renda (IRPJ) e da Contribuição
-                Social
-                sobre o Lucro Líquido (CSLL), gerando economia tributária com segurança jurídica.</p>
+            <h2 id="section-title">O que é a FINEP?</h2>
+            <p>A FINEP (Financiadora de Estudos e Projetos) é uma empresa pública vinculada ao Ministério da Ciência,
+                Tecnologia e Inovação, que oferece apoio financeiro a projetos de Pesquisa, Desenvolvimento e Inovação
+                (P&DI).</p>
+            <p>Por meio de financiamentos com juros reduzidos e subvenções econômicas, a FINEP possibilita a promoção do
+                avanço tecnológico de empresas, universidades e instituições, aliando a competitividade do mercado ao
+                conhecimento intelectual no cenário brasileiro.</p>
     </section>
 
     <section class="section-infos" aria-labelledby="infos-title">
         <div class="container">
             <div class="infos-intro">
-                <h2 id="infos-title">Como a Lei do Bem pode ajudar sua empresa?</h2>
+                <h2 id="infos-title">Como a FINEP pode ajudar sua empresa?</h2>
 
                 <a class="btn" href="#">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/btn-whats.svg" alt="WhatsApp"

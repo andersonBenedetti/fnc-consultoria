@@ -242,6 +242,10 @@ ul {
 .btn.secondary {
   background-color: #10648f;
 }
+.btn.tertiary {
+  background-color: #ffffff;
+  color: #13395e;
+}
 .btn:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
@@ -665,6 +669,11 @@ ul {
   line-height: 1;
   color: #ffffff;
 }
+@media (max-width: 1024px) {
+  .section-solutions .solutions-infos #solutions-title {
+    font-size: 2em;
+  }
+}
 .section-solutions .solutions-infos p {
   color: #ffffff;
 }
@@ -833,6 +842,11 @@ ul {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+@media (max-width: 1024px) {
+  .section-about > div .about-cards {
+    gap: 10px;
+  }
+}
 .section-about > div .about-cards .about-card {
   backdrop-filter: blur(19px);
   background-color: rgba(0, 0, 0, 0.1490196078);
@@ -872,6 +886,11 @@ ul {
   font-weight: 600;
   font-size: 2.5em;
   line-height: 1;
+}
+@media (max-width: 1024px) {
+  .section-hero .hero-infos #hero-title {
+    font-size: 2em;
+  }
 }
 .section-hero .hero-infos p {
   max-width: 500px;
@@ -1015,6 +1034,11 @@ ul {
   line-height: 1;
   color: #ffffff;
 }
+@media (max-width: 1024px) {
+  #pg-home .section-results .results-infos #results-title {
+    font-size: 2em;
+  }
+}
 #pg-home .section-results .results-infos #results-title span {
   font-weight: 400;
 }
@@ -1064,6 +1088,11 @@ ul {
   line-height: 1;
   color: #13395e;
 }
+@media (max-width: 1024px) {
+  #pg-solutions .section-block > div #section-title {
+    font-size: 2em;
+  }
+}
 #pg-solutions .section-block > div p {
   max-width: 700px;
 }
@@ -1073,6 +1102,15 @@ ul {
   background-color: #10648f;
   border-radius: 10px;
   padding: 100px 0 50px 0;
+}
+#pg-solutions .section-infos.secondary {
+  background-color: #13395e;
+}
+#pg-solutions .section-infos.secondary .infos-cards .infos-card {
+  background-color: #10648f;
+}
+#pg-solutions .section-infos.tertiary {
+  background-color: #212121;
 }
 @media (max-width: 768px) {
   #pg-solutions .section-infos {
@@ -1095,6 +1133,11 @@ ul {
   color: #ffffff;
   max-width: 580px;
 }
+@media (max-width: 1024px) {
+  #pg-solutions .section-infos .infos-intro #infos-title {
+    font-size: 2em;
+  }
+}
 #pg-solutions .section-infos .infos-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1103,6 +1146,7 @@ ul {
 @media (max-width: 768px) {
   #pg-solutions .section-infos .infos-cards {
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }
 #pg-solutions .section-infos .infos-cards .infos-card {
@@ -1149,6 +1193,11 @@ ul {
   color: #13395e;
   margin-bottom: 20px;
 }
+@media (max-width: 1024px) {
+  #pg-solutions .section-benefits > div .benefits-intro #benefits-title {
+    font-size: 2em;
+  }
+}
 #pg-solutions .section-benefits > div .list-container {
   display: flex;
   flex-direction: column;
@@ -1170,6 +1219,157 @@ ul {
 #pg-solutions .section-benefits > div .list-container .benefits-list .benefits-item p {
   font-weight: 700;
   color: #10648f;
+}
+#pg-solutions .section-items {
+  max-width: 1275px;
+  margin: 0 auto 50px auto;
+  padding: 100px 0;
+  background-image: url(./img/solucoes-fundo.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+#pg-solutions .section-items.secondary {
+  background-image: none;
+  background-color: #13395e;
+}
+@media (max-width: 1024px) {
+  #pg-solutions .section-items {
+    flex-wrap: wrap;
+    padding: 40px 0;
+    border-radius: 0;
+  }
+}
+#pg-solutions .section-items .items-infos {
+  max-width: 580px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#pg-solutions .section-items .items-infos #items-title {
+  font-weight: 600;
+  font-size: 2.5em;
+  line-height: 1;
+  color: #ffffff;
+}
+@media (max-width: 1024px) {
+  #pg-solutions .section-items .items-infos #items-title {
+    font-size: 2em;
+  }
+}
+#pg-solutions .section-items .items-infos p {
+  color: #ffffff;
+}
+#pg-solutions .section-items .items-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 50px auto;
+}
+@media (max-width: 1024px) {
+  #pg-solutions .section-items .items-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+#pg-solutions .section-items .items-container .item-card {
+  backdrop-filter: blur(19px);
+  background-color: rgba(0, 0, 0, 0.1490196078);
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 192px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+@media (max-width: 1024px) {
+  #pg-solutions .section-items .items-container .item-card {
+    justify-content: start;
+  }
+}
+#pg-solutions .section-items .items-container .item-card h3 {
+  font-weight: 300;
+  font-size: 1.313em;
+  line-height: 1;
+  color: #ffffff;
+}
+@media (max-width: 1024px) {
+  #pg-solutions .section-items .items-container .item-card h3 {
+    font-size: 0.875em;
+  }
+}
+#pg-solutions .section-items .items-container .item-card p {
+  font-weight: 600;
+  font-size: 1.125em;
+  line-height: 26px;
+  color: #ffffff;
+}
+@media (max-width: 1024px) {
+  #pg-solutions .section-items .items-container .item-card p {
+    font-size: 1em;
+  }
+}
+#pg-solutions .section-items .btn {
+  margin: 0 auto;
+}
+#pg-solutions .section-contact {
+  padding: 100px 20px;
+  background-color: #10648f;
+  background-image: url(./img/fundo-contato.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#pg-solutions .section-contact.secondary {
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 1024px) {
+  #pg-solutions .section-contact {
+    padding: 50px 20px;
+    background-size: cover;
+  }
+}
+#pg-solutions .section-contact #contact-title {
+  max-width: 800px;
+  font-weight: 600;
+  font-size: 2.5em;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  #pg-solutions .section-contact #contact-title {
+    font-size: 2em;
+  }
+}
+#pg-solutions .section-contact #contact-title span {
+  font-weight: 400;
+}
+#pg-solutions .section-contact .contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#pg-solutions .section-contact .contact-content p {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
