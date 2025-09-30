@@ -907,6 +907,9 @@ ul {
 .section-hero .hero-infos .btn-bottom svg:hover path {
   fill: #10648f;
 }
+.section-hero.secondary .hero-infos p {
+  max-width: 100%;
+}
 
 .container-form {
   backdrop-filter: blur(19px);
@@ -914,7 +917,6 @@ ul {
   border-radius: 10px;
   padding: 30px 20px;
   height: max-content;
-  overflow: hidden;
 }
 .container-form .form-intro {
   color: #ffffff;
@@ -1071,6 +1073,13 @@ ul {
   #pg-solutions .section-hero > div .hero-infos {
     margin-top: 0;
   }
+}
+#pg-solutions .section-hero.secondary > div {
+  grid-template-columns: 1fr;
+  margin-top: 0;
+}
+#pg-solutions .section-hero.secondary > div .hero-infos {
+  margin-top: 0;
 }
 #pg-solutions .section-block {
   margin: 50px auto;
@@ -1370,6 +1379,70 @@ ul {
 }
 #pg-solutions .section-contact .contact-content p {
   color: #ffffff;
+}
+#pg-solutions .section-form {
+  background-image: url(./img/contato-page.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+@media (max-width: 1024px) {
+  #pg-solutions .section-form {
+    padding: 50px 0;
+  }
+}
+#pg-solutions .section-form > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 150px;
+}
+@media (max-width: 1024px) {
+  #pg-solutions .section-form > div {
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 50px;
+  }
+}
+#pg-solutions .section-form > div .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#pg-solutions .section-form > div .contact-info .contact-item {
+  backdrop-filter: blur(19px);
+  background-color: rgba(0, 0, 0, 0.1490196078);
+  padding: 20px;
+  border-radius: 10px;
+  font-style: normal;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#pg-solutions .section-form > div .contact-info .contact-item .contact-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#pg-solutions .section-form > div .contact-info .contact-item .contact-header h3 {
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 20px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+#pg-solutions .section-form > div .contact-info .contact-item p {
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+#pg-solutions .section-form > div .contact-info .contact-item:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+#pg-solutions .section-form > div .contact-info .contact-item:hover .contact-header h3,
+#pg-solutions .section-form > div .contact-info .contact-item:hover p {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

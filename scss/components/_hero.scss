@@ -44,4 +44,12 @@
       }
     }
   }
+
+  &.secondary {
+    .hero-infos {
+      p {
+        max-width: 100%;
+      }
+    }
+  }
 }

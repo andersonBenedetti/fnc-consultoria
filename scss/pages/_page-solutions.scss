@@ -1,20 +1,33 @@
 #pg-solutions {
-  .section-hero > div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
-    margin-top: 50px;
-
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-      gap: 50px;
-    }
-
-    .hero-infos {
-      margin-top: 100px;
+  .section-hero {
+    > div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      margin-top: 50px;
 
       @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .hero-infos {
+        margin-top: 100px;
+
+        @media (max-width: 768px) {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &.secondary {
+      > div {
+        grid-template-columns: 1fr;
         margin-top: 0;
+
+        .hero-infos {
+          margin-top: 0;
+        }
       }
     }
   }
@@ -306,6 +319,75 @@
 
       p {
         color: $white_color;
+      }
+    }
+  }
+
+  .section-form {
+    background-image: url(./img/contato-page.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+
+    @media (max-width: 1024px) {
+      padding: 50px 0;
+    }
+
+    > div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 150px;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 50px;
+      }
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .contact-item {
+          backdrop-filter: blur(19px);
+          background-color: $card_color;
+          padding: 20px;
+          border-radius: 10px;
+          font-style: normal;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+          .contact-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            h3 {
+              @include text-label;
+              color: $white_color;
+              transition: color 0.3s ease;
+            }
+          }
+
+          p {
+            font-weight: 600;
+            color: $white_color;
+            margin-top: 10px;
+            transition: color 0.3s ease;
+          }
+
+          &:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+            .contact-header h3,
+            p {
+              color: lighten($white_color, 20%);
+            }
+          }
+        }
       }
     }
   }
