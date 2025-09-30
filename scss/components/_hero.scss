@@ -8,6 +8,12 @@
   align-items: center;
   padding: 50px 0;
 
+  #hero-title {
+    max-width: 900px;
+    @include title-section;
+    color: $white_color;
+  }
+
   .hero-infos {
     display: flex;
     flex-direction: column;
@@ -17,11 +23,6 @@
     .hero-subtitle {
       font-weight: 500;
       text-transform: uppercase;
-    }
-
-    #hero-title {
-      max-width: 900px;
-      @include title-section;
     }
 
     p {

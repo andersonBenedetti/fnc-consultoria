@@ -871,6 +871,18 @@ ul {
   align-items: center;
   padding: 50px 0;
 }
+.section-hero #hero-title {
+  max-width: 900px;
+  font-weight: 600;
+  font-size: 2.5em;
+  line-height: 1;
+  color: #ffffff;
+}
+@media (max-width: 1024px) {
+  .section-hero #hero-title {
+    font-size: 2em;
+  }
+}
 .section-hero .hero-infos {
   display: flex;
   flex-direction: column;
@@ -880,17 +892,6 @@ ul {
 .section-hero .hero-infos .hero-subtitle {
   font-weight: 500;
   text-transform: uppercase;
-}
-.section-hero .hero-infos #hero-title {
-  max-width: 900px;
-  font-weight: 600;
-  font-size: 2.5em;
-  line-height: 1;
-}
-@media (max-width: 1024px) {
-  .section-hero .hero-infos #hero-title {
-    font-size: 2em;
-  }
 }
 .section-hero .hero-infos p {
   max-width: 500px;
@@ -1443,6 +1444,25 @@ ul {
 #pg-solutions .section-form > div .contact-info .contact-item:hover .contact-header h3,
 #pg-solutions .section-form > div .contact-info .contact-item:hover p {
   color: white;
+}
+
+#pg-policy .section-hero {
+  background-image: none;
+  background-color: #0b2742;
+  min-height: 360px;
+  padding: 50px 0;
+}
+#pg-policy .section-content {
+  padding: 100px 0 50px 0;
+}
+#pg-policy .section-content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#pg-policy .section-content > div ul {
+  list-style: disc;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

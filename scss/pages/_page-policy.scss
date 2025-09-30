@@ -1,0 +1,23 @@
+#pg-policy {
+  .section-hero {
+    background-image: none;
+    background-color: $primary_color;
+    min-height: 360px;
+    padding: 50px 0;
+  }
+
+  .section-content {
+    padding: 100px 0 50px 0;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      ul {
+        list-style: disc;
+        margin-left: 20px;
+      }
+    }
+  }
+}
